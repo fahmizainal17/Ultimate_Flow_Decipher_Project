@@ -7,28 +7,8 @@ class Questionnaire_Definer:
     def __init__(self):
         pass
 
-    @staticmethod
-    def set_dark_mode_css():
-        dark_mode_css = """
-        <style>
-            html, body, [class*="View"] {
-                color: #ffffff;  /* Text Color */
-                background-color: #111111;  /* Background Color */
-            }
-            .stTextInput > div > div > input, .stFileUploader > div > div > button {
-                color: #ffffff;
-                background-color: #111111;
-            }
-            .stCheckbox > label, .stButton > button {
-                color: #ffffff;
-            }
-            /* Add other widget-specific styles here */
-        </style>
-        """
-        st.markdown(dark_mode_css, unsafe_allow_html=True)
-
     def run2(self):
-        st.title('Questionnaire Definer🎡')
+        st.title('Columns Definer 🍃')
         st.markdown("### Upload Script Files (.txt, .json format)")
 
         uploaded_file = st.file_uploader("Choose a txt with formatting or json with flow-mapping file", type=['txt','json'], key='questionnaire_file_uploader')

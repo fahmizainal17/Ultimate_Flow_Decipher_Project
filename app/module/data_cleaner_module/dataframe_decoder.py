@@ -11,7 +11,7 @@ class Questionnaire_Keypress_Decoder:
         pass
 
     def run4(self):
-        st.title('Questionnaire Definer and Keypress Decoder 🧮')
+        st.title('Dataframe Decoder 📹')
         st.markdown("### Upload Script Files (.txt, .json format)")
 
         uploaded_file = st.file_uploader("Choose a txt with formatting or json with flow-mapping file", type=['txt', 'json'], key='questionnaire_keypress_file_uploader')

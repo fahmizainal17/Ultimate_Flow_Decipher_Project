@@ -10,7 +10,7 @@ class Keypress_Decoder:
         pass
 
     def run3(self):
-        st.title('Keypresses Decoder🔑')
+        st.title('Rows Definer 💼')
         st.markdown("### Upload Script OR JSON Files (.txt, .json format)")
         uploaded_file = st.file_uploader("Choose a txt with formatting or json with flow-mapping file", type=['txt', 'json'], key='keypress_file_uploader')
 

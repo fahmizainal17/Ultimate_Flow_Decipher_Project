@@ -8,7 +8,7 @@ class IVR_Data_Cleaner:
         pass
 
     def run(self):
-        st.title('IVR Data Cleaner 🔮')
+        st.title('Data Processor 🔮')
 
         if 'processed' not in st.session_state:
             st.session_state['processed'] = False

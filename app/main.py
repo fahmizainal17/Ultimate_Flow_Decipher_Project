@@ -8,7 +8,6 @@ from module.data_cleaner_module.rows_definer import Keypress_Decoder
 from module.data_cleaner_module.dataframe_decoder import Questionnaire_Keypress_Decoder
 
 
-
 page_style()
 # Ensure to initialize the class
 ivr_cleaner = IVR_Data_Cleaner()
@@ -20,7 +19,7 @@ keypress_decoder = Keypress_Decoder()
 
 questionnaire_keypress_decoder = Questionnaire_Keypress_Decoder()
 
-tab1, tab2, tab3, tab4 = st.tabs(["IVR_Data_Cleaner", "Questionnaire_Definer", "Keypress_Decoder", "Questionnaire_Keypress_Decoder"])
+tab1, tab2, tab3, tab4 = st.tabs(["Data_Processor", "Columns_Definer", "Rows_Definer", "Dataframe_Decoder"])
 
 with tab1:
     ivr_cleaner.run()
