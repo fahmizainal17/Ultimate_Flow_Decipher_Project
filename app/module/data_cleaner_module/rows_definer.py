@@ -9,29 +9,7 @@ class Keypress_Decoder:
     def __init__(self):
         pass
 
-    @staticmethod
-    def set_dark_mode_css():
-        dark_mode_css = """
-        <style>
-            html, body, [class*="View"] {
-                color: #ffffff;  /* Text Color */
-                background-color: #111111;  /* Background Color */
-            }
-            .stTextInput > div > div > input {
-                color: #ffffff;
-                background-color: #111111;
-            }
-            .stCheckbox > label {
-                color: #ffffff;
-            }
-            /* Add other widget-specific styles here */
-        </style>
-        """
-        st.markdown(dark_mode_css, unsafe_allow_html=True)
-
     def run3(self):
-        self.set_dark_mode_css()  # Ensure dark mode is applied
-
         st.title('Keypresses Decoder🔑')
         st.markdown("### Upload Script OR JSON Files (.txt, .json format)")
         uploaded_file = st.file_uploader("Choose a txt with formatting or json with flow-mapping file", type=['txt', 'json'], key='keypress_file_uploader')

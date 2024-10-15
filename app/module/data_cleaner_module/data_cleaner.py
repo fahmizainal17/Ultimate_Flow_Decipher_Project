@@ -7,28 +7,9 @@ class IVR_Data_Cleaner:
     def __init__(self):
         pass
 
-    @staticmethod
-    def set_dark_mode_css():
-        dark_mode_css = """
-        <style>
-            html, body, [class*="View"] {
-                color: #ffffff !important;  /* Text Color */
-                background-color: #111111 !important;  /* Background Color */
-            }
-            .streamlit-container {
-                background-color: #111111 !important;
-            }
-            .stTextInput > div > div > input {
-                color: #ffffff !important;
-            }
-            /* You can add additional CSS rules here */
-        </style>
-        """
-        st.markdown(dark_mode_css, unsafe_allow_html=True)
-
     def run(self):
-        self.set_dark_mode_css()  # Apply the dark mode CSS
-        st.title('IVR Data Cleaner💎')
+        st.title('IVR Data Cleaner 🔮')
+
         if 'processed' not in st.session_state:
             st.session_state['processed'] = False
             st.session_state['total_calls_made'] = 0

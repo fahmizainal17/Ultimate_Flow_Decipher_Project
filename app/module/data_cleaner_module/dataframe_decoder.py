@@ -10,29 +10,7 @@ class Questionnaire_Keypress_Decoder:
     def __init__(self):
         pass
 
-    @staticmethod
-    def set_dark_mode_css():
-        dark_mode_css = """
-        <style>
-            html, body, [class*="View"] {
-                color: #ffffff;  /* Text Color */
-                background-color: #111111;  /* Background Color */
-            }
-            .stTextInput > div > div > input, .stFileUploader > div > div > button {
-                color: #ffffff;
-                background-color: #111111;
-            }
-            .stCheckbox > label, .stButton > button {
-                color: #ffffff;
-            }
-            /* Add other widget-specific styles here */
-        </style>
-        """
-        st.markdown(dark_mode_css, unsafe_allow_html=True)
-
     def run4(self):
-        self.set_dark_mode_css()  # Apply the dark mode CSS
-
         st.title('Questionnaire Definer and Keypress Decoder 🧮')
         st.markdown("### Upload Script Files (.txt, .json format)")
 
