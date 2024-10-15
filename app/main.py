@@ -1,15 +1,14 @@
 import streamlit as st
 import numpy as np
-from module.utils.component import page_style
-from module.utils.security import check_password
-from module.ivr_data_cleaner.IVR_Data_Cleaner import IVR_Data_Cleaner
-from module.ivr_data_cleaner.Questionnaire_Definer import Questionnaire_Definer
-from module.ivr_data_cleaner.Keypress_Decoder import Keypress_Decoder
-from module.ivr_data_cleaner.Questionnaire_Keypress_Decoder import Questionnaire_Keypress_Decoder
+from utils.component import page_style
+from utils.security import check_password
+from module.data_cleaner_module.data_cleaner import IVR_Data_Cleaner
+from module.data_cleaner_module.columns_definer import Questionnaire_Definer
+from module.data_cleaner_module.rows_definer import Keypress_Decoder
+from module.data_cleaner_module.dataframe_decoder import Questionnaire_Keypress_Decoder
 
 if check_password():
-    page_style(title="IVR Data Cleaning")
-
+    page_style()
     # Ensure to initialize the class
     ivr_cleaner = IVR_Data_Cleaner()
 

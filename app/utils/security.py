@@ -17,7 +17,7 @@ def check_password():
     if "password_correct" not in st.session_state:
 
         st.header(":green[*Analytics*] Survey Automation Tools")
-        image = Image.open('module/photos/invoke_logo.png')
+        image = Image.open('photos/Background_Photo.png')
         st.image(image)
         st.text_input(
         "Please enter your password", type="password", on_change=password_entered, key="password"

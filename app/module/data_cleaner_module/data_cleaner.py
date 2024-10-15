@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime
-from module.data_cleaner_module.data_cleaning_utils.data_cleaner import process_file 
+from module.data_cleaner_module.data_cleaning_utils.data_cleaner_utils import process_file 
 
 class IVR_Data_Cleaner:
     def __init__(self):
