@@ -33,11 +33,12 @@ class IVR_Data_Cleaner:
         st.markdown("### Upload IVR Files (.csv format)")
 
         uploaded_files = st.file_uploader("Choose CSV files", accept_multiple_files=True)
-
-        if uploaded_files:
-            st.write(f"Number of files uploaded: {len(uploaded_files)}")
-
+        
         if st.button('Process'):
+            if not uploaded_files:
+                st.error("No files uploaded. Please upload a CSV file to process.")
+                return
+
             with st.spinner("Processing the files..."):
                 st.session_state['all_data'] = []
                 st.session_state['all_phonenum'] = []

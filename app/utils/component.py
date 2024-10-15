@@ -74,17 +74,15 @@ def page_style():
         st.image("photos/Round_Profile_Photo.png", width=150)
 
         st.markdown("""
-            ## Web Scraping Project
-            **This project focuses on scraping job listings from various online platforms, extracting details such as job title, company, location, and posting date. The aim is to analyze and visualize the data to gain insights into job market trends and opportunities.**
+            ## Created by [Fahmi Zainal](https://www.linkedin.com/in/fahmizainal17/)
+            **This project focuses on data analytics,data processing automation.**
         """)
 
         st.markdown("""
         ### Relevant Skills
-        - **Web Scraping Techniques (Beautiful Soup, Scrapy)**
-        - **Data Collection**
         - **Data Profiling**
         - **Data Analysis**
-        - **Data Visualization**
+        - **Data Processing Automation**
         - **Python (Programming Language)**
         - **Streamlit,HTML,CSS**
         """)

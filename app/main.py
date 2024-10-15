@@ -7,7 +7,6 @@ from module.data_cleaner_module.columns_definer import Questionnaire_Definer
 from module.data_cleaner_module.rows_definer import Keypress_Decoder
 from module.data_cleaner_module.dataframe_decoder import Questionnaire_Keypress_Decoder
 
-
 page_style()
 # Ensure to initialize the class
 ivr_cleaner = IVR_Data_Cleaner()
